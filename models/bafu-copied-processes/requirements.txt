@@ -1,0 +1,17 @@
+# Core toolkit (src/) -- classification, model, round-trip validation
+pandas>=2.0
+pyarrow>=14.0
+numpy>=1.24
+
+# src/forecast_superstructure.py -- MILP-based forecasting (superstructure
+# optimization, bundles the open-source CBC solver, no separate install needed)
+pulp>=2.7
+
+# src/geo.py -- resolves a location code to a region bucket for --anchor regional
+pycountry-convert>=0.7
+
+# Only needed for validate/ (real sentier-brightway + bw2calc end-to-end check).
+# Install separately -- see README.md "Step 4" -- because sentier-brightway
+# pulls in its own pinned bw2calc/bw2data/bw_processing versions and is best
+# kept in its own virtual environment:
+#   pip install git+https://github.com/sentier-dev/sentier-brightway

@@ -1,0 +1,767 @@
+reference_product,n_locations,n_distinct_structures,identical_structure,max_coefficient_of_variation,sector,bucket
+Electricity mix,81,72,False,,02-electricity,variable-mix
+"Electricity, high voltage, at grid",81,1,True,0.010835896147770942,02-electricity,trivial-template
+"Electricity, low voltage, at grid",81,1,True,0.3888426805167106,02-electricity,template-with-variation
+"Electricity, medium voltage, at grid",81,1,True,0.14234548235840774,02-electricity,trivial-template
+"Electricity, production mix",81,70,False,,02-electricity,variable-mix
+"Natural gas, burned in gas turbine",68,2,False,,05-energy,variable-mix
+"Natural gas, low pressure, at consumer",64,2,False,,05-energy,variable-mix
+"Natural gas, high pressure, at consumer",64,62,False,,05-energy,variable-mix
+"Crude oil, at production offshore",50,5,False,,05-energy,variable-mix
+"Crude oil, at production",50,1,True,0.8551502525781026,05-energy,template-with-variation
+"Natural gas, at production",50,1,True,0.833561887343781,05-energy,template-with-variation
+"Crude oil, at production onshore",50,50,False,,05-energy,variable-mix
+"Natural gas, at production offshore",50,4,False,,05-energy,variable-mix
+"Natural gas, at production onshore",50,50,False,,05-energy,variable-mix
+"Tap water, water balance according to MoeK 2013, at user",48,48,False,,10-building-services,variable-mix
+"Electricity, hydropower, at pumped storage power plant",47,35,False,,02-electricity,variable-mix
+Electricity imports,46,31,False,,02-electricity,variable-mix
+"Crude oil, market mix, at long distance transport",43,19,False,,05-energy,variable-mix
+"Transport, natural gas, onshore pipeline, long distance",42,3,False,,05-energy,variable-mix
+"Natural gas, burned in power plant or heat plant",38,4,False,,05-energy,variable-mix
+"Electricity, from natural gas",38,4,False,,02-electricity,variable-mix
+"Heat, from natural gas",34,4,False,,05-energy,variable-mix
+"Heat, natural gas, at CHP power plant",34,1,True,0.17993080583026577,05-energy,template-with-variation
+"Electricity, production mix photovoltaic, at plant",33,33,False,,02-electricity,variable-mix
+"Electricity, natural gas, at CHP power plant",32,1,True,0.13785181809955138,02-electricity,trivial-template
+"Water, deionised, water balance according to MoeK 2013, at plant",32,32,False,,10-building-services,variable-mix
+"xxx Electricity mix, GO cancellations",31,13,False,,02-electricity,variable-mix
+"xxx Electricity mix, high voltage, GO cancellations",31,1,True,1.1749486895461645,02-electricity,template-with-variation
+"xxx Electricity mix, medium voltage, GO cancellations",31,1,True,0.9070760167268409,02-electricity,template-with-variation
+"xxx Electricity, GO supply mix",31,11,False,,02-electricity,variable-mix
+"xxx Electricity, high voltage, GO supply mix",31,1,True,1.0150135803344644,02-electricity,template-with-variation
+"xxx Electricity, low voltage, GO supply mix",31,1,True,0.9986510305228211,02-electricity,template-with-variation
+"xxx Electricity, medium voltage, GO supply mix",31,1,True,1.1462978273536382,02-electricity,template-with-variation
+"xxx Electricity mix, low voltage, GO cancellations",31,1,True,0.8433138203860705,02-electricity,template-with-variation
+"Electricity, natural gas, at power plant",30,1,True,0.3106334239123521,02-electricity,template-with-variation
+"xxx Electricity, residual mix",30,12,False,,02-electricity,variable-mix
+"xxx Electricity, medium voltage, residual mix",30,1,True,1.1551698869694842,02-electricity,template-with-variation
+"xxx Electricity, low voltage, residual mix",30,1,True,1.2549470181112454,02-electricity,template-with-variation
+"Natural gas, production US, at long-distance pipeline",30,3,False,,05-energy,variable-mix
+"xxx Electricity, high voltage, residual mix",30,1,True,1.00725420605816,02-electricity,template-with-variation
+"Natural gas, production US, at evaporation plant",29,2,False,,05-energy,variable-mix
+"Natural gas, production RU, at long-distance pipeline",29,6,False,,05-energy,variable-mix
+"Electricity, hard coal, at power plant",28,4,False,,02-electricity,variable-mix
+"Natural gas, liquefied, production US, at freight ship",28,2,False,,05-energy,variable-mix
+"Heat, natural gas, at heat plant",27,1,True,0.10067804238250905,05-energy,trivial-template
+"Electricity, hydropower, at power plant",26,7,False,,02-electricity,variable-mix
+"Hard coal, burned in power plant",25,12,False,,02-electricity,variable-mix
+"Natural gas, production DZ, at long-distance pipeline",23,4,False,,05-energy,variable-mix
+"Natural gas, production TT, at long-distance pipeline",23,3,False,,05-energy,variable-mix
+"Natural gas, liquefied, production TT, at freight ship",22,2,False,,05-energy,variable-mix
+"Natural gas, production TT, at evaporation plant",22,1,True,0.2441227808634101,05-energy,template-with-variation
+"Natural gas, production NG, at long-distance pipeline",22,3,False,,05-energy,variable-mix
+"Natural gas, production NG, at evaporation plant",21,2,False,,05-energy,variable-mix
+"Electricity, oil, at power plant",21,2,False,,02-electricity,variable-mix
+"Natural gas, production QA, at long-distance pipeline",21,3,False,,05-energy,variable-mix
+"Natural gas, production RU, at evaporation plant",21,2,False,,05-energy,variable-mix
+"Heavy fuel oil, burned in power plant",21,10,False,,02-electricity,variable-mix
+"Natural gas, liquefied, production RU, at freight ship",20,1,True,0.6658332158827593,05-energy,template-with-variation
+"Natural gas, production DZ, at evaporation plant",20,2,False,,05-energy,variable-mix
+"Natural gas, liquefied, production NG, at freight ship",20,2,False,,05-energy,variable-mix
+"Natural gas, production QA, at evaporation plant",20,2,False,,05-energy,variable-mix
+"Natural gas, liquefied, production QA, at freight ship",19,2,False,,05-energy,variable-mix
+"Natural gas, liquefied, production DZ, at freight ship",19,1,True,0.7134416176010957,05-energy,template-with-variation
+"Natural gas, production EG, at long-distance pipeline",19,3,False,,05-energy,variable-mix
+"Natural gas, production NO, at long-distance pipeline",19,7,False,,05-energy,variable-mix
+"Natural gas, production EG, at evaporation plant",18,1,True,0.26531525440152115,05-energy,template-with-variation
+"Natural gas, liquefied, production EG, at freight ship",18,2,False,,05-energy,variable-mix
+"Electricity, lignite, at power plant",17,4,False,,02-electricity,variable-mix
+"Natural gas, liquefied, at liquefaction plant",16,1,True,0.0,05-energy,trivial-template
+"Natural gas, production NO, at evaporation plant",15,2,False,,05-energy,variable-mix
+"Transport, natural gas, offshore pipeline, long distance",15,2,False,,05-energy,variable-mix
+"Natural gas, production OM, at long-distance pipeline",15,3,False,,05-energy,variable-mix
+"Natural gas, liquefied, production NO, at freight ship",14,1,True,0.5540297467667754,05-energy,template-with-variation
+"Natural gas, liquefied, production OM, at freight ship",14,2,False,,05-energy,variable-mix
+"Heat, hard coal, at cogen, allocation exergy",14,2,False,,05-energy,variable-mix
+Hard coal supply mix,14,10,False,,05-energy,variable-mix
+"Lignite, burned in power plant",14,6,False,,02-electricity,variable-mix
+"Natural gas, production OM, at evaporation plant",14,1,True,0.2929151279034834,05-energy,template-with-variation
+"Natural gas, burned in power plant",13,3,False,,02-electricity,variable-mix
+"Natural gas, production PE, at long-distance pipeline",13,3,False,,05-energy,variable-mix
+"Disposal, lignite ash, 0% water, to opencast refill",13,1,True,2.6249666365898765,10-building-services,template-with-variation
+"Natural gas, production ID, at long-distance pipeline",13,4,False,,05-energy,variable-mix
+"Natural gas, liquefied, production PE, at freight ship",12,1,True,0.2938218157897624,05-energy,template-with-variation
+"Natural gas, production DE, at long-distance pipeline",12,2,False,,05-energy,variable-mix
+"Natural gas, production AU, at long-distance pipeline",12,3,False,,05-energy,variable-mix
+"Natural gas, production PE, at evaporation plant",12,1,True,0.3101504117122041,05-energy,template-with-variation
+"Disposal, hard coal ash, 0% water, to residual material landfill",12,1,True,2.3668296396182913,06-waste,template-with-variation
+"Natural gas, production AE, at long-distance pipeline",11,4,False,,05-energy,variable-mix
+"Natural gas, production ID, at evaporation plant",11,1,True,0.319880771558456,05-energy,template-with-variation
+"Natural gas, production AU, at evaporation plant",11,1,True,0.4106459979331452,05-energy,template-with-variation
+"Hard coal, at mine",11,6,False,,02-electricity,variable-mix
+"Natural gas, liquefied, production ID, at freight ship",11,2,False,,05-energy,variable-mix
+"Natural gas, liquefied, production AU, at freight ship",11,1,True,0.3314169907786538,05-energy,template-with-variation
+"Natural gas, production NL, at long-distance pipeline",11,2,False,,05-energy,variable-mix
+"Heat, lignite, at cogen, allocation exergy",10,2,False,,05-energy,variable-mix
+"Electricity, industrial gas, at power plant",10,3,False,,02-electricity,variable-mix
+"Natural gas, production MY, at long-distance pipeline",9,3,False,,05-energy,variable-mix
+"Uranium natural, in yellowcake, at mill",9,6,False,,05-energy,variable-mix
+"Natural gas, production AE, at evaporation plant",9,1,True,0.34200222935541147,05-energy,template-with-variation
+"Natural gas, production AO, at evaporation plant",9,1,True,0.34200222935541147,05-energy,template-with-variation
+"Natural gas, production AO, at long-distance pipeline",9,1,True,0.126639259310885,05-energy,trivial-template
+"Natural gas, production AZ, at long-distance pipeline",9,3,False,,05-energy,variable-mix
+"Natural gas, liquefied, production AE, at freight ship",9,1,True,0.474847204706393,05-energy,template-with-variation
+"Natural gas, liquefied, production AO, at freight ship",9,1,True,0.1477618469183395,05-energy,trivial-template
+"Hard coal, at regional storage",9,4,False,,05-energy,variable-mix
+"Natural gas, production MY, at evaporation plant",8,1,True,0.35454425467793,05-energy,template-with-variation
+"Natural gas, production BE, at long-distance pipeline",8,2,False,,05-energy,variable-mix
+"Natural gas, liquefied, production MY, at freight ship",8,1,True,0.3526445836588994,05-energy,template-with-variation
+"Natural gas, production GB, at long-distance pipeline",8,2,False,,05-energy,variable-mix
+"Natural gas, production FR, at long-distance pipeline",8,1,True,0.0,05-energy,trivial-template
+"Natural gas, liquefied, at freight ship",7,7,False,,05-energy,variable-mix
+"Natural gas, production TM, at long-distance pipeline",7,2,False,,05-energy,variable-mix
+"Natural gas, liquefied, production GQ, at freight ship",7,2,False,,05-energy,variable-mix
+"Natural gas, production DK, at long-distance pipeline",7,1,True,1.9285532889645966e-16,05-energy,trivial-template
+"Natural gas, production RO, at long-distance pipeline",7,2,False,,05-energy,variable-mix
+"Natural gas, production IT, at long-distance pipeline",7,2,False,,05-energy,variable-mix
+"Natural gas, production GQ, at long-distance pipeline",7,1,True,0.15328037207133813,05-energy,template-with-variation
+"Natural gas, production GQ, at evaporation plant",7,1,True,0.3680896676117764,05-energy,template-with-variation
+"Transport, natural gas, pipeline, long distance",6,5,False,,05-energy,variable-mix
+"Electricity, nuclear, at power plant pressure water reactor",6,6,False,,02-electricity,variable-mix
+"Natural gas, burned in gas turbine, for compressor station",6,4,False,,02-electricity,variable-mix
+"Natural gas, production RoE, at long-distance pipeline",6,1,True,1.150047449158611e-16,05-energy,trivial-template
+"Transport, freight, rail",6,5,False,,04-transport,variable-mix
+"Copper concentrate, at beneficiation",6,6,False,,08-materials,variable-mix
+"Natural gas, burned in gas motor, for storage",6,4,False,,02-electricity,variable-mix
+"Nuclear power plant, pressure water reactor 1000MW",5,4,False,,02-electricity,variable-mix
+"Natural gas, production PL, at long-distance pipeline",5,2,False,,05-energy,variable-mix
+"Natural gas, production LY, at long-distance pipeline",5,2,False,,05-energy,variable-mix
+"Natural gas, production KZ, at long-distance pipeline",5,2,False,,05-energy,variable-mix
+"Transport, freight, rail, electricity only",5,4,False,,04-transport,variable-mix
+"Natural gas, production IR, at long-distance pipeline",5,2,False,,05-energy,variable-mix
+"Natural gas, production SK, at long-distance pipeline",5,1,True,0.0,05-energy,trivial-template
+"Natural gas, production HR, at long-distance pipeline",5,1,True,0.0,05-energy,trivial-template
+"Natural gas, production TR, at long-distance pipeline",5,2,False,,05-energy,variable-mix
+"3kWp facade installation, multi-Si, panel, mounted, at building",5,3,False,,02-electricity,variable-mix
+"Natural gas, production BO, at long-distance pipeline",5,2,False,,05-energy,variable-mix
+"Mine, gold",5,2,False,,08-materials,variable-mix
+"3kWp facade installation, multi-Si, laminated, integrated, at building",5,3,False,,02-electricity,variable-mix
+"Copper, primary, at refinery",5,4,False,,08-materials,variable-mix
+"3kWp slanted-roof installation, single-Si, laminated, integrated, on roof",5,3,False,,02-electricity,variable-mix
+"Electricity mix, operation storage pumps, ENTSO, 2020, at plant",5,5,False,,02-electricity,variable-mix
+"Electricity mix, operation storage pumps, ENTSO, summer 2018, at plant",5,5,False,,02-electricity,variable-mix
+"Electricity, high voltage, operation storage pumps, ENTSO, 2020, at grid",5,1,True,0.11834301792735068,02-electricity,trivial-template
+"Electricity, high voltage, operation storage pumps, ENTSO, summer 2018, at grid",5,1,True,0.7519624782739621,02-electricity,template-with-variation
+"Electricity, high voltage, operation storage pumps, ENTSO, winter 2018, at grid",5,1,True,1.0632948314413022,02-electricity,template-with-variation
+"Electricity, hydropower, at pumped storage plant, ENTSO, 2020",5,1,True,1.1980796425056682e-16,02-electricity,trivial-template
+"Electricity, hydropower, at pumped storage plant, ENTSO, summer 2018",5,1,True,0.41866493843162667,02-electricity,template-with-variation
+"Electricity, hydropower, at pumped storage plant, ENTSO, winter 2018",5,1,True,0.3614368144901629,02-electricity,template-with-variation
+"3kWp slanted-roof installation, single-Si, panel, mounted, on roof",5,3,False,,02-electricity,variable-mix
+"Ethanol, 99.7% in H2O, from biomass, at distillation",5,5,False,,05-energy,variable-mix
+"Gold, at refinery",5,5,False,,08-materials,variable-mix
+"Electricity mix, operation storage pumps, ENTSO, winter 2018, at plant",5,5,False,,02-electricity,variable-mix
+"3kWp flat roof installation, single-Si, on roof",5,3,False,,02-electricity,variable-mix
+"3kWp slanted-roof installation, multi-Si, panel, mounted, on roof",5,3,False,,02-electricity,variable-mix
+"3kWp flat roof installation, multi-Si, on roof",5,3,False,,02-electricity,variable-mix
+"3kWp facade installation, single-Si, panel, mounted, at building",5,3,False,,02-electricity,variable-mix
+"3kWp facade installation, single-Si, laminated, integrated, at building",5,3,False,,02-electricity,variable-mix
+"3kWp slanted-roof installation, multi-Si, laminated, integrated, on roof",5,3,False,,02-electricity,variable-mix
+"Photovoltaic laminate, multi-Si, at plant",4,4,False,,02-electricity,variable-mix
+"Natural gas, production UA, at long-distance pipeline",4,1,True,0.0,05-energy,trivial-template
+"Photovoltaic laminate, single-Si, at plant",4,4,False,,02-electricity,variable-mix
+"Photovoltaic panel, multi-Si, at plant",4,4,False,,02-electricity,variable-mix
+"Silicon, solar grade, modified Siemens process, at plant",4,3,False,,08-materials,variable-mix
+"Natural gas, production CA, at long-distance pipeline",4,2,False,,05-energy,variable-mix
+"CZ single crystalline silicon, photovoltaics, at plant",4,4,False,,02-electricity,variable-mix
+"Photovoltaic panel, single-Si, at plant",4,4,False,,02-electricity,variable-mix
+"Natural gas, production ES, at long-distance pipeline",4,2,False,,05-energy,variable-mix
+"Multi-Si wafer, at plant",4,4,False,,02-electricity,variable-mix
+"Natural gas, production GR, at long-distance pipeline",4,1,True,0.0,05-energy,trivial-template
+"Natural gas, production HU, at long-distance pipeline",4,1,True,0.0,05-energy,trivial-template
+"Reinforcing steel, electric, import CH, at plant",4,1,True,0.0,08-materials,trivial-template
+"Single-Si wafer, photovoltaics, at plant",4,4,False,,02-electricity,variable-mix
+"Uranium natural, in uranium hexafluoride, at conversion plant",4,4,False,,05-energy,variable-mix
+"Silver, from combined gold-silver production, at refinery",4,4,False,,08-materials,variable-mix
+"Natural gas, production MX, at long-distance pipeline",4,3,False,,05-energy,variable-mix
+"Silicon, electronic grade, at plant",4,2,False,,08-materials,variable-mix
+"Silicon, electronic grade, off-grade, at plant",4,2,False,,08-materials,variable-mix
+"Silicon, multi-Si, casted, at plant",4,4,False,,08-materials,variable-mix
+"Silicon, production mix, photovoltaics, at plant",4,2,False,,08-materials,variable-mix
+"U enriched 3.8%, in fuel element for LWR, at nuclear fuel fabrication plant",4,4,False,,05-energy,variable-mix
+"Natural gas, production UZ, at long-distance pipeline",4,2,False,,05-energy,variable-mix
+"Silicon, solar grade, fluidised bed reactor (FBR), at plant",4,2,False,,08-materials,variable-mix
+"Aluminiumtrihydroxide-acrylic glass, at plant",4,1,True,0.0,07-construction,trivial-template
+"Electricity, nuclear, at power plant",4,1,True,0.44521311124792606,02-electricity,template-with-variation
+"Transport, average train",4,3,False,,04-transport,variable-mix
+"Electricity, nuclear, at power plant boiling water reactor",4,4,False,,02-electricity,variable-mix
+"Steel, electric, un- and low-alloyed, for reinforcing steel, import to CH, at plant",4,4,False,,08-materials,variable-mix
+"Photovoltaic cell, multi-Si, at plant",4,4,False,,02-electricity,variable-mix
+"MG-silicon, at plant",4,1,True,0.0,08-materials,trivial-template
+"Photovoltaic cell, single-Si, at plant",4,4,False,,02-electricity,variable-mix
+"Natural gas, production IN, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Natural gas, production VE, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Natural gas, production FI, at long-distance pipeline",3,1,True,1.1500474491586113e-16,05-energy,trivial-template
+"Gold, from combined gold-silver production, at refinery",3,3,False,,08-materials,variable-mix
+"Slab and siding, softwood, wet, measured as dry mass, at sawmill",3,3,False,,08-materials,variable-mix
+"Asparagus, conventional",3,3,False,,01-agriculture,variable-mix
+"xx Electricity, natural gas, at power plant",3,1,True,0.12419529394109168,02-electricity,trivial-template
+"Sawnwood, beam, softwood, dried (u=10%), planed, at sawmill",3,3,False,,08-materials,variable-mix
+"Natural gas, production IQ, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Single-Si wafer, photovoltaics, at regional storage",3,2,False,,02-electricity,variable-mix
+"Natural gas, production KW, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Transport, high speed train",3,2,False,,04-transport,variable-mix
+"Phosphoric acid, fertiliser grade, 70% in H2O, at plant",3,3,False,,03-chemicals,variable-mix
+Uranium enrichment centrifuge plant,3,3,False,,05-energy,variable-mix
+"Natural gas, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Multi-Si wafer, at regional storage",3,2,False,,02-electricity,variable-mix
+"Sawnwood, softwood, raw, at saw",3,3,False,,08-materials,variable-mix
+"Photovoltaic panel, single-Si, at regional storage",3,2,False,,02-electricity,variable-mix
+"Natural gas, production TH, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Natural gas, production BR, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Photovoltaic laminate, multi-Si, at regional storage",3,2,False,,02-electricity,variable-mix
+"Electricity, hydropower, at reservoir power plant",3,3,False,,02-electricity,variable-mix
+"Photovoltaic laminate, CdTe, at plant",3,2,False,,02-electricity,variable-mix
+"Photovoltaic laminate, single-Si, at regional storage",3,2,False,,02-electricity,variable-mix
+"Natural gas, production AR, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Natural gas, production AT, at long-distance pipeline",3,1,True,1.1500474491586113e-16,05-energy,trivial-template
+"Photovoltaic panel for PVT, single-Si, without flat glass, at plant",3,2,False,,05-energy,variable-mix
+"Wood chips, softwood, wet, measured as dry mass, at sawmill",3,3,False,,08-materials,variable-mix
+"Fluosilicic acid, 22% in H2O, at plant",3,3,False,,03-chemicals,variable-mix
+"Natural gas, production BG, at long-distance pipeline",3,1,True,1.1500474491586113e-16,05-energy,trivial-template
+"Natural gas, production SA, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Mine, gold and silver",3,1,True,0.9139288363565824,08-materials,template-with-variation
+"Nuclear power plant, boiling water reactor 1000MW",3,3,False,,02-electricity,variable-mix
+"Natural gas, production CN, at long-distance pipeline",3,2,False,,05-energy,variable-mix
+"Photovoltaic panel, multi-Si, at regional storage",3,2,False,,02-electricity,variable-mix
+"Natural gas, production CZ, at long-distance pipeline",3,1,True,1.1500474491586113e-16,05-energy,trivial-template
+"Sawlog and veneer log, softwood, sustainable forest management, measured as solid wood under bark, at forest road",3,2,False,,08-materials,variable-mix
+"Transport, passenger car, diesel hybrid, Large SUV, 2018, EURO-6c",2,1,True,0.009125593191531176,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Large, 2016, EURO-6ab",2,1,True,0.009140690146012688,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Compact, 2021, EURO-6d",2,1,True,0.009805208575265822,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Large, 2013, EURO-5",2,1,True,0.009267333840538164,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Large SUV, 2021, EURO-6d",2,1,True,0.009632140855868837,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Large SUV, 2019, EURO-6d-TEMP",2,1,True,0.00900242081505577,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Compact, 2019, EURO-6d-TEMP",2,1,True,0.008675567483747124,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Large SUV, 2013, EURO-5",2,1,True,0.007783032299355905,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Large SUV, 2016, EURO-6ab",2,1,True,0.009519367828981658,04-transport,trivial-template
+"Transport, passenger car, diesel, Compact, 2003, EURO-3",2,1,True,0.6680294358135733,04-transport,template-with-variation
+"Transport, passenger car, diesel hybrid, Large, 2018, EURO-6c",2,1,True,0.008686486337877667,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Large, 2019, EURO-6d-TEMP",2,1,True,0.008543142130903049,04-transport,trivial-template
+"Transport, passenger car, diesel, Large SUV, 2008, EURO-4",2,1,True,0.3347732181425486,04-transport,template-with-variation
+"Transport, passenger car, diesel, Large SUV, 2013, EURO-5",2,1,True,0.008993665033274121,04-transport,trivial-template
+"Transport, passenger car, diesel, Large SUV, 2016, EURO-6ab",2,1,True,0.009065287300296751,04-transport,trivial-template
+"Transport, passenger car, diesel, Large SUV, 2018, EURO-6c",2,1,True,0.008386841042769329,04-transport,trivial-template
+"Transport, passenger car, diesel, Large SUV, 2019, EURO-6d-TEMP",2,1,True,0.00840599274451893,04-transport,trivial-template
+"Transport, passenger car, diesel, Large SUV, 2021, EURO-6d",2,1,True,0.008445324413034132,04-transport,trivial-template
+"Transport, passenger car, diesel, Large, 2003, EURO-3",2,1,True,0.0795847750865052,04-transport,trivial-template
+"Transport, passenger car, diesel, Large, 2008, EURO-4",2,1,True,0.334916864608076,04-transport,template-with-variation
+"Transport, passenger car, diesel, Large, 2013, EURO-5",2,1,True,0.009392832907129294,04-transport,trivial-template
+"Transport, passenger car, diesel, Large, 2016, EURO-6ab",2,1,True,0.008890021121421227,04-transport,trivial-template
+"Transport, passenger car, diesel, Large, 2018, EURO-6c",2,1,True,0.009155944166667726,04-transport,trivial-template
+"Transport, passenger car, diesel, Large, 2019, EURO-6d-TEMP",2,1,True,0.009202673525700079,04-transport,trivial-template
+"Transport, passenger car, diesel, Large, 2021, EURO-6d",2,1,True,0.008566242597961456,04-transport,trivial-template
+"Transport, passenger car, diesel, Medium, 2003, EURO-3",2,1,True,0.07945205479452062,04-transport,trivial-template
+"Transport, passenger car, diesel, Medium, 2008, EURO-4",2,1,True,0.33333333333333337,04-transport,template-with-variation
+"Transport, passenger car, diesel, Large SUV, 2003, EURO-3",2,1,True,0.07993474714518756,04-transport,trivial-template
+"Transport, passenger car, diesel, Medium, 2013, EURO-5",2,1,True,0.009445858203859453,04-transport,trivial-template
+"Transport, passenger car, diesel, Medium, 2016, EURO-6ab",2,1,True,0.008808021265159402,04-transport,trivial-template
+"Transport, passenger car, diesel, Compact, 2008, EURO-4",2,1,True,0.6676885346413244,04-transport,template-with-variation
+"Transport, passenger car, diesel hybrid, Large, 2021, EURO-6d",2,1,True,0.008850168005460119,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Medium, 2013, EURO-5",2,1,True,0.00883973977018627,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Medium, 2016, EURO-6ab",2,1,True,0.008970582336960986,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Medium, 2018, EURO-6c",2,1,True,0.00906528730030113,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Medium, 2019, EURO-6d-TEMP",2,1,True,0.009115117483384581,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Medium, 2021, EURO-6d",2,1,True,0.009193209499319411,04-transport,trivial-template
+"Transport, passenger car, diesel, Compact, 2013, EURO-5",2,1,True,0.6680161943319838,04-transport,template-with-variation
+"Transport, passenger car, diesel, Medium, 2018, EURO-6c",2,1,True,0.008845417670687365,04-transport,trivial-template
+"Transport, passenger car, diesel hybrid, Compact, 2016, EURO-6ab",2,1,True,0.008528368012011636,04-transport,trivial-template
+"Transport, passenger car, diesel, Compact, 2016, EURO-6ab",2,1,True,0.6678346180798879,04-transport,template-with-variation
+"Transport, passenger car, diesel, Compact, 2018, EURO-6c",2,1,True,0.6680294358135732,04-transport,template-with-variation
+"Transport, passenger car, diesel, Compact, 2019, EURO-6d-TEMP",2,1,True,0.6679076693968726,04-transport,template-with-variation
+"Transport, passenger car, diesel, Medium, 2019, EURO-6d-TEMP",2,1,True,0.008864522251257867,04-transport,trivial-template
+"Transport, passenger car, diesel, Compact, 2021, EURO-6d",2,1,True,0.667787491593813,04-transport,template-with-variation
+"Transport, passenger car, diesel hybrid, Compact, 2018, EURO-6c",2,1,True,0.008624468583598487,04-transport,trivial-template
+"Hot rolling, steel",2,2,False,,08-materials,variable-mix
+"Transport, passenger car, diesel hybrid, Compact, 2013, EURO-5",2,1,True,0.008701936105516743,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Compact, 2013, EURO-5",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Compact, 2018, EURO-6c",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Compact, 2019, EURO-6d-TEMP",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Compact, 2021, EURO-6d",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large SUV, 2003, EURO-3",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large SUV, 2008, EURO-4",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large SUV, 2013, EURO-5",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large SUV, 2016, EURO-6ab",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large SUV, 2018, EURO-6c",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large SUV, 2019, EURO-6d-TEMP",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large SUV, 2021, EURO-6d",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large, 2003, EURO-3",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large, 2008, EURO-4",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large, 2013, EURO-5",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large, 2016, EURO-6ab",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Large, 2018, EURO-6c",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Compact, 2016, EURO-6ab",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Compact, 2008, EURO-4",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, compressed gas, 100% biomethane, Large, 2021, EURO-6d",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Compact, 2003, EURO-3",2,2,False,,04-transport,variable-mix
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2010, EURO-V, regional delivery",2,1,True,0.33034379671150965,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2010, EURO-V, urban delivery",2,1,True,0.33034379671150965,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2020, EURO-VI, long haul",2,1,True,0.7155797101449275,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2020, EURO-VI, regional delivery",2,1,True,0.33005617977528096,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2020, EURO-VI, urban delivery",2,1,True,0.33005617977528096,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, fleet average, long haul",2,1,True,0.7777777777777777,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, fleet average, regional delivery",2,1,True,0.7777777777777777,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, fleet average, urban delivery",2,1,True,0.7777777777777777,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, fleet average, long haul",2,2,False,,04-transport,variable-mix
+"Transport, freight, lorry, diesel, fleet average, regional delivery",2,2,False,,04-transport,variable-mix
+"Transport, freight, lorry, diesel, fleet average, urban delivery",2,2,False,,04-transport,variable-mix
+"Transport, freight, lorry, fleet average",2,1,True,0.0,04-transport,trivial-template
+"Anode, lithium-ion battery, graphite, at plant",2,2,False,,09-electronics,variable-mix
+"Ammonia, liquid, at regional storehouse",2,1,True,0.0,03-chemicals,trivial-template
+"Acetamide-anillide-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Transport, passenger car, compressed gas, 100% biomethane, Large, 2019, EURO-6d-TEMP",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Medium, 2003, EURO-3",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, fleet average",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, compressed gas, Large SUV, 2018, EURO-6c",2,1,True,0.5053691152063342,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large SUV, 2021, EURO-6d",2,1,True,0.5054462282874651,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large, 2003, EURO-3",2,1,True,0.505527344337858,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large, 2008, EURO-4",2,1,True,0.50529913087282,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large, 2013, EURO-5",2,1,True,0.5060984582989555,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large, 2016, EURO-6ab",2,1,True,0.5064544194461894,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large, 2018, EURO-6c",2,1,True,0.5055094225977089,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large, 2019, EURO-6d-TEMP",2,1,True,0.5057458263070916,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large, 2021, EURO-6d",2,1,True,0.506241938771992,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Medium, 2003, EURO-3",2,1,True,0.5046769982855484,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Medium, 2008, EURO-4",2,1,True,0.5054849679583595,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Medium, 2013, EURO-5",2,1,True,0.5050324576101168,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Medium, 2016, EURO-6ab",2,1,True,0.5041047130562103,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Medium, 2018, EURO-6c",2,1,True,0.5061389208452526,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Medium, 2019, EURO-6d-TEMP",2,1,True,0.5056119319681865,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Medium, 2021, EURO-6d",2,1,True,0.505446228287465,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large SUV, 2019, EURO-6d-TEMP",2,1,True,0.5069378047150593,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large SUV, 2016, EURO-6ab",2,1,True,0.5048889392787156,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, 100% biomethane, Medium, 2008, EURO-4",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, Large SUV, 2013, EURO-5",2,1,True,0.5062704583356544,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, 100% biomethane, Medium, 2013, EURO-5",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Medium, 2016, EURO-6ab",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Medium, 2018, EURO-6c",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Medium, 2019, EURO-6d-TEMP",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, 100% biomethane, Medium, 2021, EURO-6d",2,1,True,0.0,04-transport,trivial-template
+"Transport, passenger car, compressed gas, Compact, 2003, EURO-3",2,1,True,0.5059898727923923,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Compact, 2008, EURO-4",2,1,True,0.5052892181584601,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Compact, 2013, EURO-5",2,1,True,0.5053217288761565,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Compact, 2016, EURO-6ab",2,1,True,0.5059018128082412,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Compact, 2018, EURO-6c",2,1,True,0.5056284560260711,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Compact, 2019, EURO-6d-TEMP",2,1,True,0.5062642495599193,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Compact, 2021, EURO-6d",2,1,True,0.5052410265577418,04-transport,template-with-variation
+"Transport, passenger car, compressed gas, Large SUV, 2003, EURO-3",2,1,True,0.5063873998388764,04-transport,template-with-variation
+"Transport, passenger car, diesel, fleet average",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, compressed gas, Large SUV, 2008, EURO-4",2,1,True,0.5064146353983628,04-transport,template-with-variation
+"Transport, passenger car, diesel, Medium, 2021, EURO-6d",2,1,True,0.009636111919419543,04-transport,trivial-template
+"Transport, passenger car, gasoline, Large SUV, 2021, EURO-6d",2,1,True,0.21714243693893345,04-transport,template-with-variation
+"Transport, passenger car, fleet average",2,2,False,,04-transport,variable-mix
+"Uranium natural, at open pit mine",2,2,False,,05-energy,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Medium, 2019, EURO-6d-TEMP",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Medium, 2021, EURO-6d",2,2,False,,04-transport,variable-mix
+"Triazine-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"U enriched 4.0%, in fuel element for LWR, at nuclear fuel fabrication plant",2,2,False,,05-energy,variable-mix
+"Underground mine, hard coal",2,2,False,,05-energy,variable-mix
+Uranium conversion plant,2,2,False,,05-energy,variable-mix
+"Uranium natural, at underground mine",2,2,False,,05-energy,variable-mix
+"Use, computer, desktop with LCD monitor, active mode",2,2,False,,09-electronics,variable-mix
+"570 kWp open ground installation, multi-Si, on open ground",2,2,False,,02-electricity,variable-mix
+"Uranium, enriched 3.8% for pressure water reactor",2,2,False,,05-energy,variable-mix
+"Uranium, enriched 4.0% for boiling water reactor",2,1,True,0.6486486486486487,05-energy,template-with-variation
+"Use, computer, desktop with CRT monitor, active mode",2,2,False,,09-electronics,variable-mix
+"Use, computer, desktop with CRT monitor, home use",2,1,True,0.0,09-electronics,trivial-template
+"Use, computer, desktop with CRT monitor, off mode",2,2,False,,09-electronics,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Medium, 2018, EURO-6c",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Medium, 2016, EURO-6ab",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Medium, 2013, EURO-5",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large, 2021, EURO-6d",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large, 2019, EURO-6d-TEMP",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large, 2018, EURO-6c",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large, 2016, EURO-6ab",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large, 2013, EURO-5",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large SUV, 2021, EURO-6d",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large SUV, 2019, EURO-6d-TEMP",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large SUV, 2018, EURO-6c",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large SUV, 2016, EURO-6ab",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Large SUV, 2013, EURO-5",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Compact, 2021, EURO-6d",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Compact, 2019, EURO-6d-TEMP",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Compact, 2018, EURO-6c",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Compact, 2016, EURO-6ab",2,2,False,,04-transport,variable-mix
+"Use, computer, desktop with CRT monitor, standby/sleep mode",2,2,False,,09-electronics,variable-mix
+"Use, computer, desktop with LCD monitor, home use",2,1,True,0.0,09-electronics,trivial-template
+"Transport, passenger car, gasoline hybrid, Compact, 2013, EURO-5",2,1,True,0.21714879939499465,04-transport,template-with-variation
+"xx Use, printer, laser jet, colour, printing per h",2,2,False,,09-electronics,variable-mix
+"xx Electricity, at wind power plant",2,2,False,,02-electricity,variable-mix
+"xx Electricity, at wind power plant 800kW",2,1,True,0.17782909930715934,02-electricity,template-with-variation
+"xx Use, computer, desktop, mix, home use",2,1,True,0.0,09-electronics,trivial-template
+"xx Use, printer, laser jet, b/w, per kg printed paper",2,2,False,,09-electronics,variable-mix
+"xx Use, printer, laser jet, b/w, printing per h",2,2,False,,09-electronics,variable-mix
+"xx Use, printer, laser jet, colour, per kg printed paper",2,2,False,,09-electronics,variable-mix
+"xx Wind power plant 800kW, fixed parts",2,2,False,,02-electricity,variable-mix
+"Use, computer, desktop with LCD monitor, off mode",2,2,False,,09-electronics,variable-mix
+"xx Wind power plant 800kW, moving parts",2,2,False,,02-electricity,variable-mix
+"xxx Crude oil, import mix, at long distance transport",2,2,False,,05-energy,variable-mix
+"3kWp slanted-roof installation, CdTe, panel, mounted, on roof",2,2,False,,02-electricity,variable-mix
+"3kWp slanted-roof installation, CdTe, laminated, integrated, on roof",2,2,False,,02-electricity,variable-mix
+"3kWp slanted-roof installation, CIS, panel, mounted, on roof",2,2,False,,02-electricity,variable-mix
+"3kWp slanted-roof installation, CIS, laminated, integrated, on roof",2,2,False,,02-electricity,variable-mix
+"xx Corrugated board, recycling fibre, single wall, at plant",2,2,False,,08-materials,variable-mix
+"xx Corrugated board, fresh fibre, single wall, at plant",2,2,False,,08-materials,variable-mix
+"[thio]carbamate-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"[sulfonyl]urea-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Wood chips, spruce, wet, sustainable forest management, measured as dry mass, at forest road",2,2,False,,08-materials,variable-mix
+"Wood chips, production mix, wet, measured as dry mass, at forest road & at sawmill",2,2,False,,08-materials,variable-mix
+"Wood chips, pine, wet, sustainable forest management, measured as dry mass, at forest road",2,2,False,,08-materials,variable-mix
+"Wood chips, hardwood, wet, measured as dry mass, at sawmill",2,2,False,,08-materials,variable-mix
+"Waste paper, sorted, for further treatment",2,2,False,,08-materials,variable-mix
+"Waste paper, mixed, from public collection, for further treatment",2,2,False,,08-materials,variable-mix
+"Vegetable oil, from waste cooking oil, at plant",2,2,False,,05-energy,variable-mix
+"Vegetable oil methyl ester, at esterification plant",2,2,False,,05-energy,variable-mix
+"Use, computer, laptop, standby/sleep mode",2,2,False,,09-electronics,variable-mix
+"Use, computer, laptop, off mode",2,2,False,,09-electronics,variable-mix
+"Use, computer, laptop, active mode",2,2,False,,09-electronics,variable-mix
+"Use, computer, desktop, with LCD monitor, office use",2,1,True,0.0,09-electronics,trivial-template
+"Use, computer, desktop with LCD monitor, sleep/standby mode",2,2,False,,09-electronics,variable-mix
+"Transport, passenger car, plugin gasoline hybrid, Compact, 2013, EURO-5",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Medium, 2021, EURO-6d",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Medium, 2019, EURO-6d-TEMP",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, gasoline, Compact, 2018, EURO-6c",2,1,True,0.667652276759314,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Medium, 2019, EURO-6d-TEMP",2,1,True,0.21772655618075967,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Medium, 2021, EURO-6d",2,1,True,0.21701138514153118,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Compact, 2003, EURO-3",2,1,True,0.6675749318801091,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Compact, 2008, EURO-4",2,1,True,0.6676470588235295,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Compact, 2013, EURO-5",2,1,True,0.6678346180798878,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Compact, 2016, EURO-6ab",2,1,True,0.6676470588235294,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Compact, 2019, EURO-6d-TEMP",2,1,True,0.6676923076923076,04-transport,template-with-variation
+"Transport, passenger car, plugin diesel hybrid, Medium, 2018, EURO-6c",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, gasoline, Compact, 2021, EURO-6d",2,1,True,0.6677215189873419,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large SUV, 2003, EURO-3",2,1,True,0.21723606264709253,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large SUV, 2008, EURO-4",2,1,True,0.4342629482071713,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large SUV, 2013, EURO-5",2,1,True,0.2168866777593352,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large SUV, 2016, EURO-6ab",2,1,True,0.21727991183330667,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large SUV, 2018, EURO-6c",2,1,True,0.2166632235369625,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Medium, 2018, EURO-6c",2,1,True,0.21782141117400178,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Medium, 2016, EURO-6ab",2,1,True,0.21799829893118933,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Medium, 2013, EURO-5",2,1,True,0.21749700604957872,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large, 2021, EURO-6d",2,1,True,0.21766629884212776,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large, 2019, EURO-6d-TEMP",2,1,True,0.2167173023382328,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large, 2018, EURO-6c",2,1,True,0.21707485064908846,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large, 2016, EURO-6ab",2,1,True,0.2169314351953229,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large, 2013, EURO-5",2,1,True,0.21695632121208397,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large SUV, 2021, EURO-6d",2,1,True,0.21663959096677915,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large SUV, 2019, EURO-6d-TEMP",2,1,True,0.21779029409030337,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large SUV, 2018, EURO-6c",2,1,True,0.2171487993949851,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large SUV, 2016, EURO-6ab",2,1,True,0.21702010490218399,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Large SUV, 2013, EURO-5",2,1,True,0.2170356601886261,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Compact, 2021, EURO-6d",2,1,True,0.21646799196859798,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Compact, 2019, EURO-6d-TEMP",2,1,True,0.21798287964573007,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Compact, 2018, EURO-6c",2,1,True,0.2170448424919817,04-transport,template-with-variation
+"Transport, passenger car, gasoline hybrid, Compact, 2016, EURO-6ab",2,1,True,0.21655920393698558,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large SUV, 2019, EURO-6d-TEMP",2,1,True,0.21706764242179463,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2006, EURO-IV, urban delivery",2,1,True,0.6521233275159977,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large, 2003, EURO-3",2,1,True,0.21772320349279053,04-transport,template-with-variation
+"Transport, passenger car, plugin diesel hybrid, Compact, 2018, EURO-6c",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Medium, 2016, EURO-6ab",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Medium, 2013, EURO-5",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large, 2021, EURO-6d",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large, 2019, EURO-6d-TEMP",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large, 2018, EURO-6c",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large, 2016, EURO-6ab",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large, 2013, EURO-5",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large SUV, 2021, EURO-6d",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large SUV, 2019, EURO-6d-TEMP",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large SUV, 2018, EURO-6c",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large SUV, 2016, EURO-6ab",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Large SUV, 2013, EURO-5",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Compact, 2021, EURO-6d",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Compact, 2019, EURO-6d-TEMP",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, plugin diesel hybrid, Compact, 2016, EURO-6ab",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, gasoline, Large, 2008, EURO-4",2,1,True,0.43237250554323725,04-transport,template-with-variation
+"Transport, passenger car, plugin diesel hybrid, Compact, 2013, EURO-5",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, gasoline, fleet average",2,2,False,,04-transport,variable-mix
+"Transport, passenger car, gasoline, Medium, 2021, EURO-6d",2,1,True,0.2166013184255592,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Medium, 2019, EURO-6d-TEMP",2,1,True,0.21718799631330707,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Medium, 2018, EURO-6c",2,1,True,0.21775668708654305,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Medium, 2016, EURO-6ab",2,1,True,0.21762700379054475,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Medium, 2013, EURO-5",2,1,True,0.21710388936288819,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Medium, 2008, EURO-4",2,1,True,0.43219264892268694,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Medium, 2003, EURO-3",2,1,True,0.2177314076665637,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large, 2021, EURO-6d",2,1,True,0.21696373693915189,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large, 2019, EURO-6d-TEMP",2,1,True,0.2172714524923873,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large, 2018, EURO-6c",2,1,True,0.21680155825915498,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large, 2016, EURO-6ab",2,1,True,0.2169850317639892,04-transport,template-with-variation
+"Transport, passenger car, gasoline, Large, 2013, EURO-5",2,1,True,0.21725186032024205,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2010, EURO-V, long haul",2,1,True,0.7155797101449275,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2010, EURO-V, regional delivery",2,1,True,0.14635234777055084,04-transport,trivial-template
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2006, EURO-IV, regional delivery",2,1,True,0.6539440203562341,04-transport,template-with-variation
+"Phenoxy-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Peat, burned in power plant",2,2,False,,02-electricity,variable-mix
+"Pellets, iron, at plant",2,2,False,,08-materials,variable-mix
+"Pesticide unspecified, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Petrol, at refinery",2,2,False,,05-energy,variable-mix
+"Petrol, at regional storage",2,2,False,,05-energy,variable-mix
+"Petrol, two-stroke blend, at regional storage",2,1,True,0.0,05-energy,trivial-template
+Phosphate rock mine,2,2,False,,08-materials,variable-mix
+"Platinum, primary, at refinery",2,2,False,,08-materials,variable-mix
+"Photovoltaic cell, multi-Si, at regional storage",2,1,True,0.1507446274147785,02-electricity,template-with-variation
+"Photovoltaic cell, single-Si, at regional storage",2,1,True,0.7047159847545577,02-electricity,template-with-variation
+"Photovoltaic laminate, CdTe, First Solar Series 4, at plant",2,2,False,,02-electricity,variable-mix
+"Photovoltaic laminate, CdTe, First Solar Series 6, at plant",2,2,False,,02-electricity,variable-mix
+"Phtalamide-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Pig iron, at plant",2,2,False,,08-materials,variable-mix
+"Paper, wood-containing, LWC, at regional storage",2,1,True,0.48606811145510836,08-materials,template-with-variation
+"Palladium, primary, at refinery",2,2,False,,08-materials,variable-mix
+"Packaging, corrugated board, mixed fibre, single wall, at plant",2,2,False,,08-materials,variable-mix
+"Organophosphorus-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Nuclear spent fuel, in conditioning, at plant",2,2,False,,06-waste,variable-mix
+Nuclear spent fuel conditioning plant,2,2,False,,06-waste,variable-mix
+"Bark chips, softwood, wet, measured as dry mass, at sawmill",2,2,False,,08-materials,variable-mix
+Nuclear fuel fabrication plant,2,2,False,,05-energy,variable-mix
+"Nitrile-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Bark, hardwood, after debarking, at sawmill",2,2,False,,08-materials,variable-mix
+"Bark, softwood, after debarking, at sawmill",2,2,False,,08-materials,variable-mix
+"Benzimidazole-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Benzo[thia]diazole-compounds, at regional storehouse",2,1,True,0.9471476423975463,03-chemicals,template-with-variation
+"Bipyridylium-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Bitumen, at refinery",2,2,False,,05-energy,variable-mix
+"Natural gas, production SE, at long-distance pipeline",2,1,True,0.0,05-energy,trivial-template
+"Cleft timber, pine, sustainable forest management, measured as dry mass, at forest road",2,2,False,,08-materials,variable-mix
+"Pipeline, natural gas, high pressure distribution network",2,2,False,,05-energy,variable-mix
+"Propane, butane, at refinery",2,2,False,,05-energy,variable-mix
+"Sawnwood, board, hardwood, raw, air dried (u=20%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, beam, hardwood, raw, air dried (u=20%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawlog and veneer log, hardwood, sustainable forest management, measured as solid wood under bark, at forest road",2,2,False,,08-materials,variable-mix
+"Sawlog and veneer log, pine, sustainable forest management, measured as solid wood under bark, at forest road",2,2,False,,08-materials,variable-mix
+"Sawlog and veneer log, spruce, sustainable forest management, measured as solid wood under bark, at forest road",2,2,False,,08-materials,variable-mix
+Sawmill,2,2,False,,08-materials,variable-mix
+"Sawnwood, beam, hardwood, dried (u=10%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, beam, hardwood, dried (u=20%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, beam, hardwood, raw, kiln dried (u=10%), at sawmill",2,2,False,,08-materials,variable-mix
+"Provision, stubbed land",2,1,True,0.11439934995509558,08-materials,trivial-template
+"Sawnwood, beam, hardwood, raw, kiln dried (u=20%), at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, beam, softwood, dried (u=20%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, beam, softwood, raw, air dried (u=20%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, beam, softwood, raw, kiln dried (u=10%), at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, beam, softwood, raw, kiln dried (u=20%), at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, board, hardwood, dried (u=10%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Saw dust, production mix, wet, measured as dry mass, at sawmill",2,2,False,,08-materials,variable-mix
+"Saw dust, loose, softwood, wet, measured as dry mass, at saw",2,2,False,,08-materials,variable-mix
+"Saw dust, loose, hardwood, wet, measured as dry mass, at saw",2,2,False,,08-materials,variable-mix
+Run-of-river hydropower plant,2,2,False,,02-electricity,variable-mix
+"Rhodium, primary, at refinery",2,2,False,,08-materials,variable-mix
+Reservoir hydropower plant,2,2,False,,02-electricity,variable-mix
+"Reinforcing steel, at plant",2,2,False,,08-materials,variable-mix
+"Refinery gas, burned in furnace",2,1,True,0.8782282047268742,05-energy,template-with-variation
+"Refinery gas, at refinery",2,2,False,,05-energy,variable-mix
+"Rape oil, at oil mill",2,2,False,,01-agriculture,variable-mix
+"Rape methyl ester, at esterification plant",2,2,False,,05-energy,variable-mix
+"Pyridazine-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Pyretroid-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Pulpwood, spruce, sustainable forest management, measured as solid wood under bark, at forest road",2,2,False,,08-materials,variable-mix
+"Pulpwood, softwood, sustainable forest management, measured as solid wood under bark, at forest road",2,2,False,,08-materials,variable-mix
+"Pulpwood, pine, sustainable forest management, measured as solid wood under bark, at forest road",2,2,False,,08-materials,variable-mix
+"Pulpwood, hardwood, sustainable forest management, measured as solid wood under bark, at forest road",2,2,False,,08-materials,variable-mix
+"Cleft timber, production mix, sustainable forest management, measured as dry mass, at forest road",2,2,False,,08-materials,variable-mix
+"Cleft timber, spruce, sustainable forest management, measured as dry mass, at forest road",2,2,False,,08-materials,variable-mix
+"Corrugated board, mixed fibre, single wall, at plant",2,2,False,,08-materials,variable-mix
+Fuel supply for gasoline vehicles,2,2,False,,04-transport,variable-mix
+"Heat, heavy fuel oil, at industrial furnace 1MW",2,1,True,0.0,05-energy,trivial-template
+Hard coal power plant,2,2,False,,02-electricity,variable-mix
+"Hard coal coke, at plant",2,2,False,,05-energy,variable-mix
+"Gypsum fibre board, at plant",2,2,False,,07-construction,variable-mix
+"Glyphosate, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Glued laminated timber, average glue mix, at plant",2,2,False,,08-materials,variable-mix
+Fuel supply for gas vehicles,2,1,True,0.44674085850556444,04-transport,template-with-variation
+"Corrugated board, recycling fibre, double wall, at plant",2,2,False,,08-materials,variable-mix
+Fuel supply for diesel vehicles,2,1,True,0.008403361344537823,04-transport,trivial-template
+"Fuel elements BWR, UO2 4.0% & MOX, at nuclear fuel fabrication plant",2,1,True,0.11111111111111113,05-energy,trivial-template
+"Float glass, coated, at plant",2,2,False,,08-materials,variable-mix
+"Electricity, peat, at power plant",2,1,True,0.06846473029045654,02-electricity,trivial-template
+"Electricity, medium voltage, railway, at grid",2,1,True,0.9,02-electricity,template-with-variation
+"Electricity, hydropower, at small hydropower plant, in waterworks infrastructure",2,1,True,0.0,02-electricity,trivial-template
+"Heat, light fuel oil, at industrial furnace 1MW",2,1,True,0.0,05-energy,trivial-template
+"Heavy fuel oil, at refinery",2,2,False,,05-energy,variable-mix
+"Heavy fuel oil, at regional storage",2,2,False,,05-energy,variable-mix
+"Heavy fuel oil, burned in industrial furnace 1MW, non-modulating",2,2,False,,05-energy,variable-mix
+"Naphtha, at regional storage",2,2,False,,05-energy,variable-mix
+"Naphtha, at refinery",2,2,False,,05-energy,variable-mix
+"Heavy fuel oil, burned in refinery furnace",2,1,True,0.5384615384615385,05-energy,template-with-variation
+"Metolachlor, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"MCPA, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Linuron, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Hot rolling, electric steel",2,2,False,,08-materials,variable-mix
+"Light fuel oil, burned in industrial furnace 1MW, non-modulating",2,2,False,,05-energy,variable-mix
+"Light fuel oil, at regional storage",2,2,False,,05-energy,variable-mix
+"Light fuel oil, at refinery",2,2,False,,05-energy,variable-mix
+"Kerosene, at regional storage",2,2,False,,05-energy,variable-mix
+"Kerosene, at refinery",2,2,False,,05-energy,variable-mix
+Irrigating,2,2,False,,01-agriculture,variable-mix
+"Electricity, hydropower, at small hydropower plant",2,1,True,0.0,02-electricity,trivial-template
+"Electricity, hydropower, at run-of-river power plant without reservoir",2,1,True,0.0,02-electricity,trivial-template
+"Electricity, hydropower, at run-of-river power plant with reservoir",2,2,False,,02-electricity,variable-mix
+"Diesel, at refinery",2,2,False,,05-energy,variable-mix
+"Crude oil, production AZ, at long distance transport",2,1,True,0.14285714285714285,05-energy,trivial-template
+"Crude oil, production IQ, at long distance transport",2,1,True,0.1893939393939394,05-energy,template-with-variation
+"Crude oil, production KZ, at long distance transport",2,1,True,0.1091703056768559,05-energy,trivial-template
+"Crude oil, production MX, at long distance transport",2,1,True,0.423728813559322,05-energy,template-with-variation
+"Crude oil, production NG, at long distance transport",2,1,True,0.5102040816326531,05-energy,template-with-variation
+"Crude oil, production NO, at long distance transport",2,1,True,0.6347826086956523,05-energy,template-with-variation
+"Crude oil, production RAF, at long distance transport",2,1,True,0.2631578947368421,05-energy,template-with-variation
+"Crude oil, production RLA, at long distance transport",2,1,True,0.4313170698043546,05-energy,template-with-variation
+"Crude oil, production RME, at long distance transport",2,1,True,0.3709677419354838,05-energy,template-with-variation
+"Crude oil, production RU, at long distance transport",2,2,False,,05-energy,variable-mix
+"Crude oil, production SA, at long distance transport",2,1,True,0.15151515151515152,05-energy,template-with-variation
+"Crude oil, production US, at long distance transport",2,1,True,0.17006802721088435,05-energy,template-with-variation
+"Cyclic N-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Dicamba, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Diesel, at regional storage",2,2,False,,05-energy,variable-mix
+"Electricity, hydropower, at run-of-river power plant",2,1,True,0.0,02-electricity,trivial-template
+"Diesel, burned in building machine, with particle filter",2,2,False,,07-construction,variable-mix
+"Dinitroaniline-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Diphenylether-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Dithiocarbamate-compounds, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Diuron, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Door, inner, aluminium, transparent filling, at plant",2,2,False,,07-construction,variable-mix
+"Door, outer, aluminium, opaque filling, at plant",2,2,False,,07-construction,variable-mix
+"Door, outer, aluminium, transparent filling, at plant",2,2,False,,07-construction,variable-mix
+"Drilling, deep borehole",2,2,False,,03-chemicals,variable-mix
+"Electricity mix, railway",2,2,False,,02-electricity,variable-mix
+"Natural gas, production CO, at long-distance pipeline",2,1,True,0.0,05-energy,trivial-template
+"Natural gas, production CH, at long-distance pipeline",2,1,True,0.0,05-energy,trivial-template
+"Electricity, at wind farm",2,2,False,,02-electricity,variable-mix
+"Electricity, high voltage, railway, at grid",2,1,True,0.0,02-electricity,trivial-template
+"Sawnwood, board, hardwood, dried (u=20%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, board, hardwood, raw, kiln dried (u=10%), at sawmill",2,2,False,,08-materials,variable-mix
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2006, EURO-IV, long haul",2,1,True,0.7155797101449275,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, fleet average, urban delivery",2,1,True,0.8,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2010, EURO-V, urban delivery",2,1,True,0.6380558428128231,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2020, EURO-VI, long haul",2,1,True,0.19620253164556967,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2020, EURO-VI, regional delivery",2,1,True,0.6373155640171347,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2020, EURO-VI, urban delivery",2,1,True,0.6373155640171347,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, fleet average, long haul",2,1,True,0.8,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, fleet average, regional delivery",2,1,True,0.8,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2002, EURO-III, long haul",2,1,True,0.551219512195122,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2010, EURO-V, urban delivery",2,1,True,0.14498257119725205,04-transport,trivial-template
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2002, EURO-III, regional delivery",2,1,True,0.1442578597801007,04-transport,trivial-template
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2002, EURO-III, urban delivery",2,1,True,0.14355210045048367,04-transport,trivial-template
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2006, EURO-IV, long haul",2,1,True,0.551219512195122,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2006, EURO-IV, regional delivery",2,1,True,0.6788635385277658,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2006, EURO-IV, urban delivery",2,1,True,0.6773675762439808,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2010, EURO-V, long haul",2,1,True,0.551219512195122,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2010, EURO-V, regional delivery",2,1,True,0.6380558428128231,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2010, EURO-V, long haul",2,1,True,0.1972477064220184,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2006, EURO-IV, urban delivery",2,1,True,0.8516769012753896,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2006, EURO-IV, regional delivery",2,1,True,0.8531381791118828,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2006, EURO-IV, long haul",2,1,True,0.6512591648071406,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2002, EURO-III, urban delivery",2,1,True,0.6380558428128231,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2002, EURO-III, regional delivery",2,1,True,0.6380558428128231,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 26t gross weight, 2002, EURO-III, long haul",2,1,True,0.1972477064220184,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2020, EURO-VI, urban delivery",2,1,True,0.6648955012398158,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2020, EURO-VI, regional delivery",2,1,True,0.6648955012398158,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2020, EURO-VI, long haul",2,1,True,0.2474747474747475,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2010, EURO-V, urban delivery",2,1,True,0.6648955012398158,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2010, EURO-V, regional delivery",2,1,True,0.6648955012398158,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2010, EURO-V, long haul",2,1,True,0.24165029469548138,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2006, EURO-IV, urban delivery",2,1,True,0.7854571634269258,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2006, EURO-IV, regional delivery",2,1,True,0.7872727272727273,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2006, EURO-IV, long haul",2,1,True,0.5022222222222222,04-transport,template-with-variation
+"Iron scrap, at plant",2,2,False,,08-materials,variable-mix
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2020, EURO-VI, long haul",2,1,True,0.551219512195122,04-transport,template-with-variation
+"Sawnwood, board, hardwood, raw, kiln dried (u=20%), at sawmill",2,2,False,,08-materials,variable-mix
+"Transport, freight, lorry, diesel, 40t gross weight, 2020, EURO-VI, regional delivery",2,1,True,0.248,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2006, EURO-IV, regional delivery",2,1,True,0.6847545219638242,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2006, EURO-IV, urban delivery",2,1,True,0.6848484848484848,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2010, EURO-V, long haul",2,1,True,0.35281837160751567,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2010, EURO-V, regional delivery",2,1,True,0.18435754189944134,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2010, EURO-V, urban delivery",2,1,True,0.18435754189944134,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2020, EURO-VI, long haul",2,1,True,0.35281837160751567,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2020, EURO-VI, urban delivery",2,1,True,0.2542819499341239,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2020, EURO-VI, regional delivery",2,1,True,0.16666666666666663,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, fleet average, long haul",2,1,True,0.8,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, fleet average, regional delivery",2,1,True,0.8,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, fleet average, urban delivery",2,1,True,0.8,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2002, EURO-III, long haul",2,1,True,0.7155797101449275,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2002, EURO-III, regional delivery",2,1,True,0.33034379671150965,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 7.5t gross weight, 2002, EURO-III, urban delivery",2,1,True,0.33034379671150965,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2006, EURO-IV, long haul",2,1,True,0.588785046728972,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2002, EURO-III, urban delivery",2,1,True,0.18435754189944134,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2002, EURO-III, regional delivery",2,1,True,0.18435754189944134,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 40t gross weight, 2002, EURO-III, long haul",2,1,True,0.35281837160751567,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2020, EURO-VI, urban delivery",2,1,True,0.3810888252148998,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2020, EURO-VI, regional delivery",2,1,True,0.3810888252148998,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2020, EURO-VI, long haul",2,1,True,0.19902912621359226,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2010, EURO-V, urban delivery",2,1,True,0.3814852492370295,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2010, EURO-V, regional delivery",2,1,True,0.3814852492370295,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2010, EURO-V, long haul",2,1,True,0.19902912621359226,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2006, EURO-IV, urban delivery",2,1,True,0.6802420293227833,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2006, EURO-IV, regional delivery",2,1,True,0.6818700114025086,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2006, EURO-IV, long haul",2,1,True,0.5876777251184834,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2002, EURO-III, urban delivery",2,1,True,0.3814852492370295,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2002, EURO-III, regional delivery",2,1,True,0.3814852492370295,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 32t gross weight, 2002, EURO-III, long haul",2,1,True,0.19902912621359226,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 3.5t gross weight, 2020, EURO-VI, urban delivery",2,1,True,0.16969696969696973,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2002, EURO-III, urban delivery",2,1,True,0.6648955012398158,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2002, EURO-III, regional delivery",2,1,True,0.6648955012398158,04-transport,template-with-variation
+"Transport, freight, lorry, diesel, 18t gross weight, 2002, EURO-III, long haul",2,1,True,0.24165029469548138,04-transport,template-with-variation
+"Scantling, softwood, average, at plant, with resource correction",2,1,True,0.02413793103448276,07-construction,trivial-template
+"Sawnwood, production mix, hardwood, raw, dried (u=10%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, production mix, hardwood, raw, dried (u=20%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, production mix, softwood, dried (u=10%), planed, at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, production mix, softwood, dried (u=20%), planed, at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, production mix, softwood, raw, dried (u=20%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Scantling, softwood, average, at plant",2,1,True,0.0,07-construction,trivial-template
+"Scantling, softwood, laminated, CCC, at plant",2,2,False,,07-construction,variable-mix
+"Transport, freight, lorry, 7.5t-16t gross weight, fleet average",2,2,False,,04-transport,variable-mix
+"Scantling, softwood, laminated, CCF, at plant",2,2,False,,07-construction,variable-mix
+"Scantling, softwood, laminated, CFC, at plant",2,2,False,,07-construction,variable-mix
+"Scantling, softwood, laminated, FFF, at plant",2,2,False,,07-construction,variable-mix
+"Scantling, softwood, solid wood, finger-jointed, at plant",2,2,False,,07-construction,variable-mix
+"Scantling, softwood, solid wood, massive, at plant",2,2,False,,07-construction,variable-mix
+"Secondary sulphur, at refinery",2,2,False,,03-chemicals,variable-mix
+"Sawnwood, production mix, hardwood, dried (u=20%), planed, at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, production mix, hardwood, dried (u=10%), planed, at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, lath, softwood, raw, kiln dried (u=20%), at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, lath, softwood, raw, kiln dried (u=10%), at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, lath, softwood, raw, air dried (u=20%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, lath, softwood, dried (u=20%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, lath, softwood, dried (u=10%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, lath, hardwood, raw, kiln dried (u=20%), at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, lath, hardwood, raw, kiln dried (u=10%), at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, lath, hardwood, raw, air dried (u=20%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, lath, hardwood, dried (u=20%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, lath, hardwood, dried (u=10%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, hardwood, raw, at saw",2,2,False,,08-materials,variable-mix
+"Sawnwood, board, softwood, raw, kiln dried (u=20%), at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, board, softwood, raw, air dried (u=20%), at sawmill",2,1,True,0.0,08-materials,trivial-template
+"Sawnwood, board, softwood, dried (u=20%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Sawnwood, board, softwood, dried (u=10%), planed, at sawmill",2,2,False,,08-materials,variable-mix
+"Separator, lithium-ion battery, at plant",2,2,False,,09-electronics,variable-mix
+"Shavings, hardwood, measured as dry mass, at planing mill",2,2,False,,08-materials,variable-mix
+"Shavings, loose, hardwood, from planing, average, measured as dry mass, at planing machine",2,1,True,0.0,08-materials,trivial-template
+Small hydropower plant,2,2,False,,02-electricity,variable-mix
+"Transport, freight, lorry, 32t-40t gross weight, fleet average",2,2,False,,04-transport,variable-mix
+"Transport, freight, lorry, 3.5t-7.5t gross weight, fleet average",2,2,False,,04-transport,variable-mix
+"Transport, freight, lorry, 3.5t gross weight, fleet average",2,2,False,,04-transport,variable-mix
+"Transport, freight, lorry, 16t-32t gross weight, fleet average",2,2,False,,04-transport,variable-mix
+"Tempering, flat glass",2,2,False,,07-construction,variable-mix
+"Atrazine, at regional storehouse",2,2,False,,03-chemicals,variable-mix
+"Tap water, at user",2,2,False,,10-building-services,variable-mix
+"Sulphate pulp, average, at regional storage",2,1,True,0.06293706293706292,08-materials,trivial-template
+"Strawberries, conventional, unheated plastic tunnel",2,2,False,,01-agriculture,variable-mix
+"Soybeans, at farm",2,2,False,,01-agriculture,variable-mix
+"Soybean oil, at oil mill",2,2,False,,01-agriculture,variable-mix
+"Soybean methyl ester, at esterification plant",2,1,True,0.102030529953917,05-energy,trivial-template
+"Soybean meal, at oil mill",2,2,False,,01-agriculture,variable-mix
+"Small hydropower plant, in waterworks infrastructure",2,2,False,,02-electricity,variable-mix
+"Slab and siding, hardwood, wet, measured as dry mass, at sawmill",2,2,False,,08-materials,variable-mix
+"Shavings, loose, hardwood, from planing, beam, u=10%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Sinter, iron, at plant",2,2,False,,08-materials,variable-mix
+"Shavings, softwood, measured as dry mass, at planing mill",2,2,False,,08-materials,variable-mix
+"Shavings, loose, softwood, from planing, lath, u=20%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, softwood, from planing, lath, u=10%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, softwood, from planing, board, u=20%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Bark chips, hardwood, wet, measured as dry mass, at sawmill",2,2,False,,08-materials,variable-mix
+"Shavings, loose, softwood, from planing, beam, u=20%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, softwood, from planing, beam, u=10%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, softwood, from planing, average, measured as dry mass, at planing machine",2,1,True,0.0,08-materials,trivial-template
+"Shavings, loose, hardwood, from planing, lath, u=20%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, hardwood, from planing, lath, u=10%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, hardwood, from planing, board, u=20%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, hardwood, from planing, board, u=10%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, hardwood, from planing, beam, u=20%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix
+"Shavings, loose, softwood, from planing, board, u=10%, measured as dry mass, at planing machine",2,2,False,,08-materials,variable-mix

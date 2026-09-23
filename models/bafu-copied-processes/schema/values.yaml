@@ -1,0 +1,74 @@
+# Schema for values.parquet — one row per (family member, slot) pair.
+# A family member is identified by its varying axes: location, time_tag,
+# or both at once. Absence of a row for a given (member, slot) means that
+# flow is not used by that member (implicit zero) — no separate sparsity
+# bookkeeping is needed. Proposed addition alongside structure.yaml —
+# issue #36.
+
+table: values
+file: values.parquet
+primary_key: [process_id, slot_id]
+description: >
+  The per-member numbers, referencing structure.parquet by slot_id.
+  Replaces per-member duplication in exchanges.parquet: only ids and
+  numbers repeat per member, never flow_name/direction/flow_type/unit
+  text — that text is written once in structure.parquet.
+
+columns:
+  - name: family_id
+    type: string
+    required: true
+    description: Joins to structure.parquet.
+  - name: process_id
+    type: string
+    required: true
+    description: >
+      Which family member this row belongs to — the same stable id used
+      in processes.parquet. A member is still a normal row there; this
+      table only replaces its rows in exchanges.parquet.
+  - name: location
+    type: string
+    required: true
+    description: Geography code (same as processes.parquet.location).
+  - name: time_tag
+    type: string
+    required: false
+    description: >
+      Free-form time-period key (e.g. "winter-2018"), null when this
+      member has no explicit time variant (today: 32 processes, all in
+      02-electricity — see REPORT.md). Intended to be superseded by
+      processes.parquet.valid_from once that field is populated with real
+      dates; kept as a string here because a season is not a single
+      calendar date. A family may vary by location only, time only, or
+      both at once — this column and `location` are independent keys.
+  - name: slot_id
+    type: int
+    required: true
+    description: Joins to structure.parquet (family_id, slot_id).
+  - name: flow
+    type: string
+    required: true
+    description: >
+      The linked flow/process id for this exchange (upstream process id
+      for a technosphere exchange, elementary-flow id for a biosphere
+      exchange). This is the one id that legitimately differs by location
+      even when flow_name/direction/flow_type/unit do not (a technosphere
+      input usually points at the *local* upstream process).
+  - name: amount
+    type: double
+    required: true
+  - name: uncertainty_type
+    type: int
+    required: false
+  - name: loc
+    type: double
+    required: false
+  - name: scale
+    type: double
+    required: false
+  - name: minimum
+    type: double
+    required: false
+  - name: maximum
+    type: double
+    required: false
