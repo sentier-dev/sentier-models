@@ -1,0 +1,46 @@
+# Schema for structure.parquet — the shared "recipe" for one copied-process
+# family (a reference_product repeated across location and/or time).
+# Stored ONCE per family; values.parquet references it by slot_id.
+# Proposed addition to sentier-inventory/schema/, alongside process.yaml
+# and exchange.yaml — issue #36.
+
+table: structure
+file: structure.parquet
+primary_key: [family_id, slot_id]
+description: >
+  The set of exchange "slots" (flow_name, direction, flow_type, unit) that
+  appear anywhere in a family. For a family whose members share an
+  identical exchange list (e.g. a distribution process, low variance
+  across locations), this is exactly that list. For a family whose members
+  vary in composition (e.g. a national electricity production mix), this
+  is the union of every flow ever used by any member — the shared
+  "technology catalog". The same table shape covers both: only the fill
+  rate of values.parquet against it differs.
+
+columns:
+  - name: family_id
+    type: string
+    required: true
+    description: >
+      Stable id for one family: a hash of the time-stripped
+      reference_product (see values.yaml for why time is stripped).
+  - name: slot_id
+    type: int
+    required: true
+    description: >
+      Row index within this family's structure, starting at 0.
+      values.parquet joins on (family_id, slot_id).
+  - name: flow_name
+    type: string
+    required: true
+  - name: direction
+    type: enum
+    enum: flow_direction        # see common.yaml
+    required: true
+  - name: flow_type
+    type: enum
+    enum: flow_type             # see common.yaml
+    required: true
+  - name: unit
+    type: string
+    required: true

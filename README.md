@@ -19,10 +19,10 @@ and data together.
    - the source and licence of every data file,
    - how to run it.
 4. Add a row to the table below and open a pull request.
-
+   
 | Folder | What it computes | Contributors |
 |---|---|---|
-| | | |
+| [`bafu-copied-processes`](models/bafu-copied-processes/) | Splits BAFU's copied-process families into structure+values (lossless round-trip on all 766 families, cross-checked against real bw2calc), and forecasts a held-out family member via MILP superstructure optimization | [Ozge Ozkilinc](https://github.com/ozgeozkilincc) |
 
 ## Rules
 

@@ -1,0 +1,219 @@
+========================================================================
+Step 1  - classify every copied-process family
+========================================================================
+Total 766 copied-process families (reference_product, >1 location)
+
+Bucket distribution:
+bucket
+variable-mix               409
+template-with-variation    222
+trivial-template           135
+Name: count, dtype: int64
+
+Total affected process_id count (sum of n_locations): 4469
+
+--- trivial-template (135 families, 555 processes) ---
+                                    reference_product         sector  n_locations  n_distinct_structures  max_coefficient_of_variation
+                   Electricity, high voltage, at grid 02-electricity           81                      1                      0.010836
+                 Electricity, medium voltage, at grid 02-electricity           81                      1                      0.142345
+         Electricity, natural gas, at CHP power plant 02-electricity           32                      1                      0.137852
+                     Heat, natural gas, at heat plant      05-energy           27                      1                      0.100678
+        Natural gas, liquefied, at liquefaction plant      05-energy           16                      1                      0.000000
+Natural gas, production AO, at long-distance pipeline      05-energy            9                      1                      0.126639
+
+--- template-with-variation (222 families, 1158 processes) ---
+                                    reference_product         sector  n_locations  n_distinct_structures  max_coefficient_of_variation
+                    Electricity, low voltage, at grid 02-electricity           81                      1                      0.388843
+                           Natural gas, at production      05-energy           50                      1                      0.833562
+                             Crude oil, at production      05-energy           50                      1                      0.855150
+                Heat, natural gas, at CHP power plant      05-energy           34                      1                      0.179931
+  xxx Electricity mix, high voltage, GO cancellations 02-electricity           31                      1                      1.174949
+xxx Electricity mix, medium voltage, GO cancellations 02-electricity           31                      1                      0.907076
+
+--- variable-mix (409 families, 2756 processes) ---
+                      reference_product         sector  n_locations  n_distinct_structures  max_coefficient_of_variation
+                        Electricity mix 02-electricity           81                     72                           NaN
+            Electricity, production mix 02-electricity           81                     70                           NaN
+     Natural gas, burned in gas turbine      05-energy           68                      2                           NaN
+ Natural gas, low pressure, at consumer      05-energy           64                      2                           NaN
+Natural gas, high pressure, at consumer      05-energy           64                     62                           NaN
+    Natural gas, at production offshore      05-energy           50                      4                           NaN
+
+Written: /home/ozge/Desktop/openLCA/hackathon/demo6/bafu-copied-processes/data/families.parquet and families.csv
+
+========================================================================
+Step 2  - round-trip check on 4 example families
+========================================================================
+'Electricity, high voltage, at grid': roundtrip OK = True
+  number of locations       : 81
+  original exchange rows    : 567
+  -> structure rows         : 6  (stored once)
+  -> value rows             : 567  (numeric/id columns only)
+  savings from not repeating structure text: ~98.8% (text columns stored once instead of 81 times)
+
+'Electricity, low voltage, at grid': roundtrip OK = True
+  number of locations       : 81
+  original exchange rows    : 567
+  -> structure rows         : 6  (stored once)
+  -> value rows             : 567  (numeric/id columns only)
+  savings from not repeating structure text: ~98.8% (text columns stored once instead of 81 times)
+
+'Electricity, production mix': roundtrip OK = True
+  number of locations       : 81
+  original exchange rows    : 990
+  -> structure rows         : 22  (stored once)
+  -> value rows             : 990  (numeric/id columns only)
+  savings from not repeating structure text: ~98.8% (text columns stored once instead of 81 times)
+
+'Natural gas, at production onshore': roundtrip OK = True
+  number of locations       : 50
+  original exchange rows    : 1627
+  -> structure rows         : 131  (stored once)
+  -> value rows             : 1627  (numeric/id columns only)
+  savings from not repeating structure text: ~98.0% (text columns stored once instead of 50 times)
+
+
+========================================================================
+Step 3  - round-trip check on ALL families
+========================================================================
+Families tested: 766
+Failed (row count mismatch) families: 0
+
+Original total exchange rows (for these families): 129687
+Compact model -> structure rows (stored once)      : 25732
+Compact model -> value rows (numeric/id only)      : 129687
+
+Structure/original ratio: 19.84% (i.e. text columns are stored at only this fraction of the volume; the rest is a reference instead of a repeat)
+
+========================================================================
+Step 3b - time-axis round-trip check (electricity)
+========================================================================
+4 time-families found (2 axes: location + time_tag)
+
+Electricity, hydropower, at pumped storage plant, ENTSO | 5 locations x 2 time variants = 10 processes | structure=22 rows | roundtrip=OK
+Electricity mix                                         | 81 locations x 2 time variants = 83 processes | structure=35 rows | roundtrip=OK
+Electricity, high voltage, operation storage pumps, ENT | 5 locations x 2 time variants = 10 processes | structure=8 rows | roundtrip=OK
+Electricity mix, operation storage pumps, ENTSO, at pla | 5 locations x 2 time variants = 10 processes | structure=26 rows | roundtrip=OK
+
+Total: 4 succeeded, 0 failed families. Total exchange rows: 1788
+
+========================================================================
+Step 3c - generate real structure.parquet/values.parquet
+========================================================================
+97 families in 02-electricity (location and/or time)
+round-trip: 97 ok, 0 failed
+structure.parquet: 2039 rows -> /home/ozge/Desktop/openLCA/hackathon/demo6/bafu-copied-processes/demo-schema-output/data/02-electricity/structure.parquet
+values.parquet:    32458 rows -> /home/ozge/Desktop/openLCA/hackathon/demo6/bafu-copied-processes/demo-schema-output/data/02-electricity/values.parquet
+processes covered by families: 1416 / 2033 in this sector
+
+structure.parquet sample:
+   family_id  slot_id                                                              flow_name direction    flow_type unit
+8ce0293181cb        0 3kWp facade installation, multi-Si, laminated, integrated, at building    output   production    p
+8ce0293181cb        1                                    Inverter, 2.5 kW, average, at plant     input technosphere    p
+8ce0293181cb        2                    Electric installation, photovoltaic plant, at plant     input technosphere    p
+8ce0293181cb        3                   Photovoltaic laminate, multi-Si, at regional storage     input technosphere   m2
+
+values.parquet sample:
+   family_id                           process_id location time_tag  slot_id                                 flow  amount  uncertainty_type      loc    scale minimum maximum
+8ce0293181cb dc134106-2d82-3837-a0af-b29947a8c23e       US     None        0 dc134106-2d82-3837-a0af-b29947a8c23e   1.000               NaN      NaN      NaN    None    None
+8ce0293181cb dc134106-2d82-3837-a0af-b29947a8c23e       US     None        1 7da39c9b-d38f-32f1-b0fa-676bd25fdaa7   2.400               2.0 0.875469 0.105738    None    None
+8ce0293181cb dc134106-2d82-3837-a0af-b29947a8c23e       US     None        2 6e910062-f919-3dbe-b24f-96eee8f43df8   1.000               2.0 0.000000 0.367744    None    None
+8ce0293181cb dc134106-2d82-3837-a0af-b29947a8c23e       US     None        3 6430e076-3cdf-3193-a18f-d2dc6996f1e7  17.167               2.0 2.842989 0.153080    None    None
+
+========================================================================
+Step 3d - MILP superstructure forecasting (stretch goal)
+========================================================================
+Leave-one-out superstructure forecast: 'Electricity, production mix' (anchor: regional)
+
+location  status    mae  precision  recall     f1  candidate_slots  unseen_elsewhere
+      FR Optimal 0.0439     0.9000  0.6429 0.7500               21                 0
+     RME Optimal 0.0493     0.1000  1.0000 0.1818               21                 0
+      VN Optimal 0.0656     0.5000  0.5556 0.5263               21                 0
+      TW Optimal 0.0397     0.7273  0.5333 0.6154               21                 0
+      RO Optimal 0.0269     0.8000  0.6154 0.6957               21                 0
+      AE Optimal 0.0430     0.5000  0.8333 0.6250               21                 0
+      BD Optimal 0.0387     0.5455  0.7500 0.6316               21                 0
+      IS Optimal 0.0690     0.2222  0.6667 0.3333               21                 0
+      AU Optimal 0.0552     0.6923  0.7500 0.7200               21                 0
+      TZ Optimal 0.0575     0.4167  0.7143 0.5263               21                 0
+      CN Optimal 0.0696     0.7000  0.5385 0.6087               21                 0
+      RS Optimal 0.0635     0.9000  0.7500 0.8182               21                 0
+      MK Optimal 0.0564     0.5556  0.7143 0.6250               21                 0
+      GB Optimal 0.0603     0.8000  0.6154 0.6957               21                 0
+      CH Optimal 0.0536     0.6154  0.6154 0.6154               18                 3
+      FI Optimal 0.0486     0.8000  0.5333 0.6400               21                 0
+      UA Optimal 0.0535     0.8182  0.6429 0.7200               21                 0
+      SI Optimal 0.0337     0.8889  0.6667 0.7619               21                 0
+      CA Optimal 0.0433     0.8462  0.7333 0.7857               21                 0
+      LT Optimal 0.0626     0.7000  0.7000 0.7000               21                 0
+      SK Optimal 0.0521     1.0000  0.6000 0.7500               21                 0
+      GR Optimal 0.0572     0.7778  0.6364 0.7000               21                 0
+      IQ Optimal 0.0493     0.4545  0.8333 0.5882               21                 0
+      MX Optimal 0.0673     0.6154  0.6154 0.6154               21                 0
+      MA Optimal 0.0848     0.4000  0.4444 0.4211               21                 0
+      BA Optimal 0.0588     0.8000  0.7273 0.7619               21                 0
+      PK Optimal 0.0350     0.6000  0.6667 0.6316               21                 0
+      SE Optimal 0.0563     0.7500  0.6000 0.6667               21                 0
+      ID Optimal 0.0644     0.6364  0.6364 0.6364               21                 0
+      PL Optimal 0.0565     0.8889  0.5714 0.6957               21                 0
+      EE Optimal 0.0774     0.5455  0.6000 0.5714               21                 0
+      BG Optimal 0.0360     0.9000  0.6923 0.7826               21                 0
+      IN Optimal 0.0770     0.8000  0.5333 0.6400               21                 0
+     RER Optimal 0.0497     0.0000  0.0000    NaN               21                 0
+      KR Optimal 0.0474     0.7273  0.5714 0.6400               21                 0
+      TR Optimal 0.0509     0.7273  0.6154 0.6667               21                 0
+      MY Optimal 0.0450     0.5000  0.5556 0.5263               21                 0
+      NZ Optimal 0.0508     0.5385  0.6364 0.5833               21                 0
+      ES Optimal 0.0489     0.8889  0.5333 0.6667               21                 0
+      CL Optimal 0.0612     0.4444  0.4000 0.4211               21                 0
+     RLA Optimal 0.0456     0.1111  1.0000 0.2000               21                 0
+      CO Optimal 0.0585     0.4444  0.3636 0.4000               21                 0
+      PT Optimal 0.0533     0.7778  0.6364 0.7000               21                 0
+      DZ Optimal 0.0777     0.4167  0.7143 0.5263               21                 0
+      DE Optimal 0.0548     0.9091  0.6667 0.7692               21                 0
+      ZA Optimal 0.0862     0.4545  0.5556 0.5000               21                 0
+      ET Optimal 0.0891     0.3333  0.8000 0.4706               21                 0
+      BR Optimal 0.0447     0.7778  0.5000 0.6087               21                 0
+     GLO Optimal 0.0507     0.0769  1.0000 0.1429               21                 0
+     RAS Optimal 0.0484     0.1000  1.0000 0.1818               21                 0
+      NO Optimal 0.0662     0.8000  0.6154 0.6957               21                 0
+      AT Optimal 0.0566     0.8000  0.6154 0.6957               21                 0
+      TH Optimal 0.0411     0.7273  0.6667 0.6957               21                 0
+      TN Optimal 0.0776     0.4167  0.6250 0.5000               21                 0
+      NL Optimal 0.0713     0.6364  0.5833 0.6087               21                 0
+      CZ Optimal 0.0448     1.0000  0.6667 0.8000               21                 0
+     RNA Optimal 0.0842     0.0909  1.0000 0.1667               21                 0
+      BE Optimal 0.0451     0.8000  0.6154 0.6957               21                 0
+      AR Optimal 0.0645     0.7500  0.4615 0.5714               21                 0
+      LV Optimal 0.0783     0.5000  0.6250 0.5556               21                 0
+      JP Optimal 0.0346     0.7000  0.5000 0.5833               21                 0
+      IR Optimal 0.0459     0.5833  0.7000 0.6364               21                 0
+     RAF Optimal 0.0455     0.0909  1.0000 0.1667               21                 0
+      PH Optimal 0.0556     0.6000  0.6667 0.6316               21                 0
+      IE Optimal 0.0760     0.7000  0.5833 0.6364               21                 0
+      US Optimal 0.0538     0.8462  0.6875 0.7586               21                 0
+      SG Optimal 0.0535     0.4444  0.6667 0.5333               21                 0
+      RU Optimal 0.0611     0.8333  0.6250 0.7143               21                 0
+      SA Optimal 0.0502     0.3000  0.7500 0.4286               21                 0
+      PE Optimal 0.0524     0.4444  0.4444 0.4444               21                 0
+      LU Optimal 0.0681     0.7000  0.7778 0.7368               21                 0
+      IL Optimal 0.0422     0.5833  0.7778 0.6667               21                 0
+      IT Optimal 0.0639     0.7778  0.5385 0.6364               21                 0
+      EG Optimal 0.0661     0.3636  0.6667 0.4706               21                 0
+      NG Optimal 0.0570     0.3333  1.0000 0.5000               21                 0
+      HU Optimal 0.0526     0.9000  0.6429 0.7500               21                 0
+      DK Optimal 0.0742     0.6000  0.6000 0.6000               21                 0
+      HR Optimal 0.0539     0.7000  0.6364 0.6667               21                 0
+      QA Optimal 0.0568     0.2000  1.0000 0.3333               21                 0
+ ENTSO-E Optimal 0.0502     0.0000  0.0000    NaN               21                 0
+      KZ Optimal 0.0536     0.5455  0.6667 0.6000               21                 0
+
+Mean MAE across 81 locations : 0.0564
+'Predict every slot inactive' baseline MAE: 0.0472  (NOT a valid recipe -- doesn't sum to 1 -- shown only because raw MAE alone is misleading on a sparse family; see README)
+
+Technology-activation precision: 0.595   (of the technologies we activated, fraction that were really used)
+Technology-activation recall   : 0.650   (of the technologies really used, fraction we correctly activated)
+Technology-activation F1       : 0.589
+
+========================================================================
+Done -- all steps completed.
