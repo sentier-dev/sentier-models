@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BAFU Copied-Process Forecasting — Results</title>
+<style>
+  .viz-root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --surface-2:      #f5f4f1;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #86847d;
+    --grid:           #e4e2dd;
+    --series-global:  #2a78d6;   /* categorical slot 1 */
+    --series-regional:#eb6834;   /* categorical slot 2 */
+    --status-good:    #0ca30c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) .viz-root {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --surface-2:      #232322;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #8a8980;
+      --grid:           #33322f;
+      --series-global:  #3987e5;
+      --series-regional:#d95926;
+      --status-good:    #0ca30c;
+    }
+  }
+  :root[data-theme="dark"] .viz-root {
+    color-scheme: dark;
+    --surface-1:      #1a1a19;
+    --surface-2:      #232322;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #8a8980;
+    --grid:           #33322f;
+    --series-global:  #3987e5;
+    --series-regional:#d95926;
+    --status-good:    #0ca30c;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--surface-1); }
+  .viz-root {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--surface-1);
+    color: var(--text-primary);
+    padding: 32px 20px 48px;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 20px; font-weight: 700; margin: 0 0 4px; }
+  .subtitle { font-size: 14px; color: var(--text-secondary); margin: 0 0 32px; }
+  .panel { margin-bottom: 40px; }
+  .panel h2 { font-size: 15px; font-weight: 600; margin: 0 0 2px; }
+  .panel .note { font-size: 12.5px; color: var(--text-muted); margin: 0 0 16px; }
+
+  .legend { display: flex; gap: 20px; margin-bottom: 14px; font-size: 12.5px; color: var(--text-secondary); }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .swatch { width: 10px; height: 10px; border-radius: 2px; }
+
+  .chart-row { display: flex; gap: 48px; align-items: flex-end; padding: 8px 8px 0; }
+  .group { display: flex; flex-direction: column; align-items: center; flex: 1; }
+  .bars { display: flex; gap: 6px; align-items: flex-end; height: 180px; width: 100%; justify-content: center; }
+  .bar-wrap { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; width: 46px; position: relative; }
+  .bar-value { font-size: 12px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; white-space: nowrap; }
+  .bar {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    transition: opacity 0.15s ease;
+  }
+  .bar:hover { opacity: 0.85; cursor: default; }
+  .bar.global { background: var(--series-global); }
+  .bar.regional { background: var(--series-regional); }
+  .baseline { height: 1px; background: var(--grid); width: 100%; }
+  .group-label { font-size: 12.5px; color: var(--text-secondary); margin-top: 10px; text-align: center; line-height: 1.3; white-space: pre-line; }
+
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    margin-top: 10px;
+  }
+  table.data-table caption {
+    text-align: left; font-size: 12px; color: var(--text-muted); margin-bottom: 6px; caption-side: top;
+  }
+  table.data-table th, table.data-table td {
+    text-align: right;
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--grid);
+  }
+  table.data-table th:first-child, table.data-table td:first-child { text-align: left; }
+  table.data-table th { color: var(--text-secondary); font-weight: 600; }
+
+  details.table-toggle { margin-top: 8px; }
+  details.table-toggle summary {
+    font-size: 12.5px; color: var(--text-secondary); cursor: pointer; user-select: none;
+  }
+
+  .france-row { display: flex; gap: 40px; flex-wrap: wrap; }
+  .france-metric { flex: 1; min-width: 220px; }
+  .france-metric h3 { font-size: 13px; font-weight: 600; margin: 0 0 12px; color: var(--text-secondary); }
+  .slope { position: relative; height: 100px; }
+  .slope svg { width: 100%; height: 100%; overflow: visible; }
+  .improve-tag {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 11.5px; font-weight: 600; color: var(--status-good);
+    margin-top: 6px;
+  }
+
+  footer { font-size: 11.5px; color: var(--text-muted); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="viz-root">
+
+  <h1>Leave-one-out forecasting results</h1>
+  <p class="subtitle">BAFU copied-process superstructure MILP · global vs. regional anchor</p>
+  <p class="note">Only families whose technosphere inputs share one unit are shown: the sum-to-one
+    mass-balance constraint (and this validation) only makes sense there. "Natural gas, at
+    production onshore" (mixed kg/MJ/Nm3/tkm inputs) is excluded for that reason — see REPORT.md.</p>
+
+  <div class="legend">
+    <div class="legend-item"><span class="swatch" style="background:var(--series-global)"></span>Global anchor (whole-family mean)</div>
+    <div class="legend-item"><span class="swatch" style="background:var(--series-regional)"></span>Regional anchor (same-region neighbors, default)</div>
+  </div>
+
+  <div class="panel">
+    <h2>Technology-activation F1 score</h2>
+    <p class="note">Of the technologies the model turned on/off, how many matched reality — higher is better</p>
+    <div class="chart-row" id="f1-chart"></div>
+    <details class="table-toggle">
+      <summary>View as table</summary>
+      <table class="data-table">
+        <caption>F1 score by family and anchor mode</caption>
+        <thead><tr><th>Family</th><th>Global</th><th>Regional</th></tr></thead>
+        <tbody>
+          <tr><td>Electricity, production mix (81 locations)</td><td>0.598</td><td>0.589</td></tr>
+        </tbody>
+      </table>
+    </details>
+  </div>
+
+  <div class="panel">
+    <h2>Mean absolute error (MAE)</h2>
+    <p class="note">Average deviation between forecast and real technosphere shares — lower is better</p>
+    <div class="chart-row" id="mae-chart"></div>
+    <details class="table-toggle">
+      <summary>View as table</summary>
+      <table class="data-table">
+        <caption>MAE by family and anchor mode</caption>
+        <thead><tr><th>Family</th><th>Global</th><th>Regional</th></tr></thead>
+        <tbody>
+          <tr><td>Electricity, production mix (81 locations)</td><td>0.0603</td><td>0.0564</td></tr>
+        </tbody>
+      </table>
+    </details>
+  </div>
+
+  <div class="panel">
+    <h2>Where regional anchoring matters most: France</h2>
+    <p class="note">France (63% nuclear share) is the clearest regional outlier in the electricity family — global anchoring pulls its forecast toward the world mean, regional anchoring pulls it toward its European neighbors</p>
+    <div class="france-row">
+      <div class="france-metric">
+        <h3>F1 score</h3>
+        <div class="slope" id="france-f1"></div>
+        <div class="improve-tag">▲ +0.152 (0.598 → 0.750)</div>
+      </div>
+      <div class="france-metric">
+        <h3>MAE</h3>
+        <div class="slope" id="france-mae"></div>
+        <div class="improve-tag">▼ −0.0021 (0.0460 → 0.0439)</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Source: bafu-copied-processes/src/forecast_superstructure.py — leave-one-out validation against real sentier-inventory data (BAFU LCI, 2026).</footer>
+
+</div>
+
+<script>
+(function() {
+  const root = document.querySelector('.viz-root');
+  const cs = getComputedStyle(root);
+  const colGlobal = cs.getPropertyValue('--series-global').trim();
+  const colRegional = cs.getPropertyValue('--series-regional').trim();
+  const colGrid = cs.getPropertyValue('--grid').trim();
+  const colText = cs.getPropertyValue('--text-secondary').trim();
+
+  function barGroup(container, groups, fmt, maxVal) {
+    container.innerHTML = '';
+    groups.forEach(g => {
+      const wrap = document.createElement('div');
+      wrap.className = 'group';
+
+      const bars = document.createElement('div');
+      bars.className = 'bars';
+
+      [['global', g.global], ['regional', g.regional]].forEach(([cls, val]) => {
+        const bw = document.createElement('div');
+        bw.className = 'bar-wrap';
+        const label = document.createElement('div');
+        label.className = 'bar-value';
+        label.textContent = fmt(val);
+        const bar = document.createElement('div');
+        bar.className = 'bar ' + cls;
+        bar.style.height = Math.max(4, (val / maxVal) * 150) + 'px';
+        bar.title = g.name + ' — ' + (cls === 'global' ? 'Global' : 'Regional') + ' anchor: ' + fmt(val);
+        bw.appendChild(label);
+        bw.appendChild(bar);
+        bars.appendChild(bw);
+      });
+
+      const baseline = document.createElement('div');
+      baseline.className = 'baseline';
+
+      const glabel = document.createElement('div');
+      glabel.className = 'group-label';
+      glabel.textContent = g.name;
+
+      wrap.appendChild(bars);
+      wrap.appendChild(baseline);
+      wrap.appendChild(glabel);
+      container.appendChild(wrap);
+    });
+  }
+
+  barGroup(document.getElementById('f1-chart'), [
+    { name: 'Electricity, production mix\n(81 locations)', global: 0.598, regional: 0.589 },
+  ], v => v.toFixed(3), 0.8);
+
+  barGroup(document.getElementById('mae-chart'), [
+    { name: 'Electricity, production mix\n(81 locations)', global: 0.0603, regional: 0.0564 },
+  ], v => v.toFixed(4), 0.07);
+
+  function slope(container, before, after, fmt, higherIsBetter) {
+    const w = container.clientWidth || 220, h = 100;
+    const pad = 34;
+    const vMin = Math.min(before, after) * 0.85;
+    const vMax = Math.max(before, after) * 1.15;
+    const y = v => h - pad - ((v - vMin) / (vMax - vMin)) * (h - pad - 10);
+    const x1 = 40, x2 = w - 40;
+    const y1 = y(before), y2 = y(after);
+    const lineColor = getComputedStyle(document.querySelector('.viz-root')).getPropertyValue('--status-good').trim();
+
+    container.innerHTML = `
+      <svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+        <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${lineColor}" stroke-width="2"/>
+        <circle cx="${x1}" cy="${y1}" r="5" fill="${colGlobal}"/>
+        <circle cx="${x2}" cy="${y2}" r="5" fill="${colRegional}"/>
+        <text x="${x1}" y="${y1 - 12}" font-size="11" fill="${colText}" text-anchor="middle">${fmt(before)}</text>
+        <text x="${x2}" y="${y2 - 12}" font-size="11" fill="${colText}" text-anchor="middle">${fmt(after)}</text>
+        <text x="${x1}" y="${h - 8}" font-size="11" fill="${colText}" text-anchor="middle">Global</text>
+        <text x="${x2}" y="${h - 8}" font-size="11" fill="${colText}" text-anchor="middle">Regional</text>
+      </svg>
+    `;
+  }
+
+  slope(document.getElementById('france-f1'), 0.598, 0.750, v => v.toFixed(3), true);
+  slope(document.getElementById('france-mae'), 0.0460, 0.0439, v => v.toFixed(4), false);
+})();
+</script>
+</body>
+</html>
